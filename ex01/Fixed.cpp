@@ -38,3 +38,8 @@ Fixed &Fixed::operator=(const Fixed& object)
 	}
 	return (*this);
 }
+
+Fixed::Fixed(const float number)
+{
+	fix_point_value = (int)number;
+}
